@@ -1,0 +1,32 @@
+Placement Helm Chart
+===================
+
+Setup
+-----
+
+Vault
+-----
+You need to create a secret in vault with the following keys
+ * database_connection
+ * keystone_password
+
+Refer to the secret in your values
+
+vault:
+  settings_secret: secret/data/k8s/<namespace>/placement/settings
+
+
+Placement settings example:
+-----------------
+conf:
+  keystone_authtoken:
+    www_authenticate_uri=https://keystone:5000
+    auth_type=password
+    memcached_servers=mc1:11211,mc2:11211
+    auth_url=https://keystone:5000
+    username=placement
+    user_domain_name=default
+    project_name=service
+    project_domain_name=default
+    service_token_roles_required=True
+    service_type=placement

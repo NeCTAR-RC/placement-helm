@@ -1,0 +1,3 @@
+{{- include "nectarlib.configmap" (list . "placement.configmap") -}}
+{{- define "placement.configmap" -}}
+{{- end -}}
