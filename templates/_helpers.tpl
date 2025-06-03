@@ -11,7 +11,7 @@ vault.hashicorp.com/agent-inject-secret-secrets.conf: "{{ .Values.vault.settings
 vault.hashicorp.com/agent-inject-template-secrets.conf: |
    {{ print "{{- with secret \"" .Values.vault.settings_secret "\" -}}" }}
    {{ print "[placement_database]" }}
-   {{ print "url={{ .Data.data.database_connection}}" }}
+   {{ print "connection={{ .Data.data.database_connection}}" }}
    {{ print "[keystone_authtoken]" }}
    {{ print "password={{ .Data.data.keystone_password }}" }}
    {{ print "{{- end -}}" }}
