@@ -50,6 +50,7 @@ api:
     hostname: chart-example.local
     parentRefs:
       - name: default
+  healthcheck_path: "/"
 
 conf:
   keystone_authtoken:
@@ -103,7 +104,6 @@ securityContext:
 
 service:
   type: ClusterIP
-  healthcheck_path: "/"
 
 autoscaling:
   enabled: false
