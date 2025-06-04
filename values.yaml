@@ -103,6 +103,7 @@ securityContext:
 
 service:
   type: ClusterIP
+  healthcheck_path: "/"
 
 autoscaling:
   enabled: false
