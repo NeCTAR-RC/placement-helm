@@ -2,7 +2,7 @@ apiVersion: v2
 name: placement
 description: A Helm chart for Openstack Placement
 type: application
-version: 2.0.0
+version: 2.1.0
 appVersion: "2024.1-eom-1-g69d08927-8-10"
 sources:
   - https://github.com/NeCTAR-RC/placement-helm.git
