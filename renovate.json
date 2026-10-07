@@ -8,7 +8,7 @@
       "matchStrings": ["appVersion:\\s*[\"']?(?<currentValue>[^\\s\"']+)"],
       "depNameTemplate": "registry.rc.nectar.org.au/kolla/ubuntu-source-placement-api",
       "datasourceTemplate": "docker",
-      "versioningTemplate": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)-eom-(?<patch>\\d+)-g[0-9a-f]+-(?<build>\\d+)-(?<revision>\\d+)$"
+      "versioningTemplate": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-(?<build>\\d+)-g[0-9a-f]+-\\d+-(?<revision>\\d+)$"
     }
   ],
   "packageRules": [
